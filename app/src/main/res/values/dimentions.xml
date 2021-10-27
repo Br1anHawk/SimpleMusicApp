@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="BUTTON_PLAY_AND_PAUSE_WIDTH">90dp</dimen>
+    <dimen name="BUTTON_PLAY_AND_PAUSE_HEIGHT">90dp</dimen>
+
+    <dimen name="BUTTON_NEXT_AND_PREVIOUS_SONG_WIDTH">60dp</dimen>
+    <dimen name="BUTTON_NEXT_AND_PREVIOUS_SONG_HEIGHT">60dp</dimen>
+
+    <dimen name="IMAGE_VIEW_PREVIEW_WIDTH">200dp</dimen>
+    <dimen name="IMAGE_VIEW_PREVIEW_HEIGHT">200dp</dimen>
+
+    <dimen name="TEXT_VIEW_TITLE_SIZE">24sp</dimen>
+</resources>

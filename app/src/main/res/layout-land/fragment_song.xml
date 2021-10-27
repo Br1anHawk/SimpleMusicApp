@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/button_play_and_pause"
+        android:layout_width="@dimen/BUTTON_PLAY_AND_PAUSE_WIDTH"
+        android:layout_height="@dimen/BUTTON_PLAY_AND_PAUSE_HEIGHT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_view_preview"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_play" />
+
+    <ImageView
+        android:id="@+id/button_next_song"
+        android:layout_width="@dimen/BUTTON_NEXT_AND_PREVIOUS_SONG_WIDTH"
+        android:layout_height="@dimen/BUTTON_NEXT_AND_PREVIOUS_SONG_HEIGHT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button_play_and_pause"
+        app:layout_constraintStart_toStartOf="@+id/button_play_and_pause"
+        app:layout_constraintTop_toBottomOf="@+id/button_play_and_pause"
+        app:srcCompat="@drawable/ic_skip" />
+
+    <ImageView
+        android:id="@+id/button_previous_song"
+        android:layout_width="@dimen/BUTTON_NEXT_AND_PREVIOUS_SONG_WIDTH"
+        android:layout_height="@dimen/BUTTON_NEXT_AND_PREVIOUS_SONG_HEIGHT"
+        app:layout_constraintBottom_toTopOf="@+id/button_play_and_pause"
+        app:layout_constraintEnd_toEndOf="@+id/button_play_and_pause"
+        app:layout_constraintStart_toStartOf="@+id/button_play_and_pause"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_skip_previous" />
+
+    <ImageView
+        android:id="@+id/image_view_preview"
+        android:layout_width="@dimen/IMAGE_VIEW_PREVIEW_WIDTH"
+        android:layout_height="@dimen/IMAGE_VIEW_PREVIEW_HEIGHT"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_title"
+        app:layout_constraintEnd_toStartOf="@+id/button_play_and_pause"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/text_view_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="@dimen/TEXT_VIEW_TITLE_SIZE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_preview"
+        app:layout_constraintStart_toStartOf="@+id/image_view_preview"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_preview"
+        tools:text="Title" />
+</androidx.constraintlayout.widget.ConstraintLayout>
